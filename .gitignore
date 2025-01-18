@@ -1,0 +1,6 @@
+# *.filetype ignores all of the specified filetype
+
+*.aux
+*.log
+*.out
+*.synctex.gz
