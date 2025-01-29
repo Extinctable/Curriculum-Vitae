@@ -1,0 +1,74 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[b4paper]{geometry}
+\geometry{margin=0.5in}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+% Commandes pour mes informations de contact
+\newcommand{\fullname}{Massimo Caruso}
+\newcommand{\phone}{(514) 944-5977}
+\newcommand{\email}{massimo02caruso@gmail.com}
+\newcommand{\linkedin}{linkedin.com/in/massimocaruso}
+\newcommand{\github}{github.com/Extinctable}
+
+% Commandes pour les informations du destinataire
+\newcommand*{\hiringManager}{\textbf{hiringManager}}
+\newcommand*{\company}{\textbf{company}}
+\newcommand*{\address}{\textbf{address}}
+
+% Commandes pour les paragraphes du corps
+\newcommand*{\position}{\textbf{position}}
+\newcommand*{\companyDetails}{\textbf{companyDetails}}
+\newcommand*{\positionDetails}{\textbf{positionDetails}}
+
+% Nom et informations de contact
+\begin{center}
+    {\Huge \textbf{\fullname}} \\
+    \vspace{1mm}
+    {\small 
+    \faPhone \hspace{0mm} \href{tel:+15149445977}{\phone} $\vert$ 
+    \faEnvelope \hspace{0mm} \href{mailto:massimo02caruso@gmail.com}{\email} $\vert$ 
+    \faLinkedin \hspace{0mm} \href{https://linkedin.com/in/massimocaruso}{\linkedin} $\vert$ 
+    \faGithub \hspace{0mm} \href{https://github.com/Extinctable}{\github}
+    }
+\end{center}
+
+% Informations du destinataire
+\vspace{1.5em}
+\hiringManager \hfill \today \\
+\company \\
+\address
+
+% Ouverture
+\vspace{1.5em}
+Chère \hiringManager,
+
+Je suis ravi de postuler au poste de \position \space chez \company. En tant qu'étudiant en troisième année de génie logiciel à l'Université Concordia, je possède une solide base en développement logiciel, ainsi qu'une expérience pratique acquise au cours de projets académiques et professionnels.
+
+% Corps
+Pendant mon mandat en tant que concepteur de défis CTF chez \href{https://www.athackctf.com}{AtHackCTF}, j'ai développé des défis RFID Capture the Flag pour simuler des scénarios de sécurité réels. Cette expérience a renforcé mes compétences techniques en analyse de systèmes, en intégration matériel/logiciel, et en conception d'environnements interactifs pour la résolution de problèmes, des compétences qui correspondent directement aux exigences du rôle de \position.
+
+De plus, mes projets académiques, tels que la création d'un système de base de données alimentaire en ligne et une application de retour d'information entre enseignants et étudiants, m'ont permis d'affiner mon expertise en Python, JavaScript et SQL, tout en travaillant avec des API et des bases de données relationnelles. Ces projets m'ont appris à gérer le développement logiciel de bout en bout, optimiser les performances du système et me concentrer sur la conception centrée sur l'utilisateur.
+
+% Pourquoi cette entreprise
+Ce qui m'enthousiasme le plus chez \company, c'est \companyDetails. Je suis particulièrement attiré par l'opportunité de \positionDetails.
+
+% Conclusion
+Je suis convaincu que mes compétences techniques, mes réalisations académiques et ma passion pour le génie logiciel font de moi un candidat solide pour le poste de \position. Je serais ravi de discuter de la manière dont mes expériences répondent aux besoins de votre équipe. N'hésitez pas à me contacter au \href{tel:+15149445977}{\phone} ou à \href{mailto:\email}{\email}.
+
+\vspace{1.5em}
+Je vous remercie de considérer ma candidature. J'espère avoir l'opportunité de contribuer au succès de \company.
+
+% Signature
+\vspace{2em}
+Cordialement, \\
+\fullname
+
+\end{document}
