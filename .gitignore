@@ -4,3 +4,7 @@
 *.log
 *.out
 *.synctex.gz
+
+
+# /directory/ ignores all of the files within the specified directory
+/Applications/
