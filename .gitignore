@@ -5,6 +5,6 @@
 *.out
 *.synctex.gz
 
-
 # /directory/ ignores all of the files within the specified directory
-/Applications/
+/Applications_Summer25/
+/Applications_Fall25/
