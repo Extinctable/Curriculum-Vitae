@@ -102,7 +102,7 @@ Sincerely, \\
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt]
     \item \textbf{Major:} Software Engineering, BEng
-    \item \textbf{Relevant Courses:} Data Structures and Algorithms, Operating Systems, System Hardware, OOP, Databases, Probability and Statistics
+    \item \textbf{Relevant Courses:} Data Structures and Algorithms, Operating Systems, Databases, Embedded Systems, Machine Learning, and Deep Learning
 \end{itemize}
 
 % Experience Section
@@ -152,35 +152,44 @@ Sincerely, \\
 \hrule
 \vspace{0mm}
 
-
 \textbf{Food Database System}
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Developed an online nutritional database integrating structured data from two APIs (FatSecret and TheMealDB) to provide detailed nutritional information, recipes, and dietary metadata.
-    \item Scraped, cleaned, and validated JSON data from APIs using Python scripts, addressing null and duplicate values. Data was stored in relational (PostgreSQL) and non-relational (MongoDB) databases to leverage hybrid data management.
-    \item Designed an ER model with 15 interconnected tables for PostgreSQL and collections for MongoDB ("recipes," "directions," and "foods"). Optimized queries for both SQL and NoSQL, including indexing and aggregate operations to enhance performance.
-    \item Automated migration of structured data from PostgreSQL to MongoDB using Python scripts, ensuring seamless linkage of primary and foreign keys during the process.
-    \item Resolved inefficiencies in FatSecret API data retrieval by implementing a random recipe name generator to bypass large ID gaps, significantly improving data extraction speed and accuracy.
+    \item Developed an online nutritional database integrating APIs (FatSecret, TheMealDB) to provide detailed nutritional data, recipes, and dietary metadata.
+    \item Cleaned and validated JSON data, storing in hybrid databases (PostgreSQL + MongoDB) with optimized queries, indexing, and aggregates.
+    \item Automated data migration between SQL and NoSQL using Python, improving retrieval efficiency with custom recipe-name generator for FatSecret API.
 \end{itemize}
 
-\textbf{Teacher-Student Feedback Web Application} 
+\textbf{Teacher-Student Feedback Web Application}
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Designed and implemented responsive frontend components, including an interactive sidebar, header, and landing page, ensuring smooth navigation and adaptability across devices.
-    \item Developed and connected the frontend for the feedback and contact pages to backend APIs, allowing users to view feedback and submit messages with real-time confirmations.
-    \item Designed and hosted relational databases on Microsoft Azure, optimizing SQL queries for efficient data retrieval and manipulation.
-    \item Conducted acceptance tests, resolved bugs, and ensured feature functionality for a seamless user experience across various devices.
-    \item Managed the repository with version control, reviewed pull requests, implemented coding standards, and documented processes to ensure project quality and organization.
+    \item Designed responsive frontend components (sidebar, header, landing page) with smooth navigation across devices.
+    \item Connected frontend forms to backend APIs for feedback submission and confirmation; optimized Azure-hosted SQL database queries.
+    \item Performed acceptance testing, bug resolution, and version control (Git), maintaining coding standards and repository organization.
 \end{itemize}
 
-\textbf{Linear Regression Model} 
+\textbf{Linear Regression Model}
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Developed a multiple linear regression model to analyze factors influencing life expectancy using WHO data from 193 countries (2000–2015).
-    \item Cleaned and preprocessed data by managing missing values, removing outliers, and converting categorical variables into quantitative data using Python.
-    \item Applied backward elimination to reduce predictors from 20 to 6, addressing multicollinearity and improving model accuracy (adjusted R² = 0.771).
-    \item Used Python (Pandas, NumPy, Scikit-learn) for analysis, hypothesis testing, and modeling; visualized correlations using heatmaps and scatter plots.
-    \item Predicted 2013 Canada life expectancy within 0.5 years of WHO’s reported value, demonstrating model reliability and efficiency.
+    \item Built a multiple regression model to analyze life expectancy factors (WHO dataset, 193 countries, 2000–2015).
+    \item Applied backward elimination to reduce predictors from 20 to 6, achieving adjusted $R^2 = 0.77$ and predicting Canada’s 2013 life expectancy within 0.5 years of reported value.
+    \item Used Python (Pandas, NumPy, Scikit-learn) for preprocessing, modeling, and visualization.
+\end{itemize}
+
+\textbf{GetNextLine Implementation (C)}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Implemented a custom function to read lines from standard input using low-level system calls (`read`) and manual memory management.
+    \item Designed buffer-zeroing and dynamic allocation strategies to handle varying input sizes safely while preventing overflow.
+    \item Handled edge cases (EOF, null bytes, \verb|\n|/\verb|\r| line breaks, empty input) with correct memory cleanup using \verb|malloc|/\verb|free|.
+\end{itemize}
+
+\textbf{Limited \texttt{printf} Implementation (C)}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Built a custom `printf` supporting \%s, \%c, and \%d format specifiers without the C standard library.
+    \item Used only system calls (\verb|read|, \verb|write|) and implemented supporting functions (\verb|my_strlen|, \verb|my_puts|, \verb|my_itoa|) for string handling and integer conversion.
+    \item Managed variadic arguments via stack frame manipulation (\verb|x86args.h|), demonstrating low-level assembly interface and systems programming.    
 \end{itemize}
 
 % Skills Section
@@ -190,9 +199,9 @@ Sincerely, \\
 \hrule
 \vspace{0mm}
 \textbf{Languages:} (Proficient): C, Java, LaTeX, HTML/CSS, Javascript, Python, SQL; (Familiar): C++, Clojure, Erlang \\
-\textbf{Frameworks:} React, Node.js, Flask, Express.js  \\
-\textbf{Libraries:} Pandas, NumPy, Matplotlib, Scikit-learn \\
-\textbf{Developer Tools:} Git, Docker, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter Notebook \\
+\textbf{Frameworks:} React, Node.js, Express.js, Flask  \\
+\textbf{Libraries:} Pandas, NumPy, Matplotlib, Scikit-learn, PyTorch \\
+\textbf{Developer Tools:} Git, Docker, Makefile, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter Notebook \\
 \textbf{Methodologies:} Agile development, Scrum, Waterfall
 
 \end{document}
