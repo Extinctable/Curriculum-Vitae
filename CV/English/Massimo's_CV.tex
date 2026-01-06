@@ -53,12 +53,12 @@
 \vspace{0mm}
 
 {\href{https://www.payfacto.com}{\textbf{PayFacto - Payment Technology Solutions}}} \hfill \textbf{May 2025 -- August 2025} \\
-{Software Project Manager, Intern }
+{Software Implementation, Intern }
 \vspace{-3mm}
 \begin{itemize}[left=0.15in, itemsep=0pt]
     \item Spearheaded data acquisition, cleaning, and preprocessing of raw merchant data sets for the deployment of MEVWeb, a province-wide cloud-based SaaS platform mandated by Revenu Québec.
-    \item Participated in end-to-end deployment of MEVWeb software both remotely and on-site, including planning, testing, and installation across restaurant partners.
-    \item Led and supported physical hardware transitions by uninstalling legacy MEV devices and installing MEVWeb-compatible components such as printers and routers.
+    \item Participated in end-to-end deployment of MEVWeb software remotely and on-site, including planning, testing, and installation.
+    \item Supported hardware transitions by uninstalling legacy MEV devices and installing MEVWeb-compatible components such as printers and routers.
     \item Collaborated with project delivery, field services, and sales teams to ensure seamless coordination of deployments and merchant onboarding.
     \item Tested MEVWeb software builds and deployment packages, reporting bugs and verifying stability before production rollout.
 \end{itemize}
@@ -92,20 +92,29 @@
 \hrule
 \vspace{0mm}
 
+
+\textbf{Market Predictability (Deep Learning Project)}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Designed and implemented a PyTorch LSTM-based trading model to learn daily market leverage allocations on the Hull Tactical Market Prediction dataset, achieving an adjusted Sharpe score of \textbf{1.94}, indicating strong risk-adjusted performance with nearly twice as much return per unit of risk.
+    \item Led systematic hyperparameter optimization across sequence length, hidden dimensions, learning rate, and regularization, identifying an optimal configuration that produced a cumulative strategy return of \textbf{122.4\%} versus \textbf{116.7\%} for a market benchmark.
+    \item Developed evaluation and visualization pipelines to analyze equity curves, drawdowns, and rolling risk metrics, observing an average rolling Sharpe of approximately \textbf{1.14} with a maximum drawdown of \textbf{-25.2\%}.
+\end{itemize}
+
+\textbf{Embedded Wireless Access Control System}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=1pt, label=--]
+    \item Designed a two-node embedded access control system using ESP32 with BLE and LoRa, implementing servo-based lock actuation, tamper detection via analog sensing, and a deterministic finite state machine (armed, alarm, 2FA, disarmed) in C++ using PlatformIO.
+    \item Implemented application-layer AES-128 encrypted alert messaging over LoRa and a BLE-based two-factor challenge--response protocol for local disarm, alongside an authenticated admin console with lockout policy and simulated biometric verification.
+    \item Integrated multi-sensor inputs (potentiometer door position, IR motion, touch-based biometric) with encrypted wireless alerts, real-time console monitoring, and modular firmware architecture supporting offline simulation and incremental security hardening.
+\end{itemize}
+
 \textbf{Food Database System}
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt, label=--]
     \item Developed an online nutritional database integrating APIs (FatSecret, TheMealDB) to provide detailed nutritional data, recipes, and dietary metadata.
     \item Cleaned and validated JSON data, storing in hybrid databases (PostgreSQL + MongoDB) with optimized queries, indexing, and aggregates.
-    \item Automated data migration between SQL and NoSQL using Python, improving retrieval efficiency with custom recipe-name generator for FatSecret API.
-\end{itemize}
-
-\textbf{Teacher-Student Feedback Web Application}
-\vspace{-4mm}
-\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Designed responsive frontend components (sidebar, header, landing page) with smooth navigation across devices.
-    \item Connected frontend forms to backend APIs for feedback submission and confirmation; optimized Azure-hosted SQL database queries.
-    \item Performed acceptance testing, bug resolution, and version control (Git), maintaining coding standards and repository organization.
+    \item Automated data migration between SQL and NoSQL, improving retrieval efficiency with custom recipe-name generator for FatSecret API.
 \end{itemize}
 
 \textbf{Linear Regression Model}
@@ -116,21 +125,7 @@
     \item Used Python (Pandas, NumPy, Scikit-learn) for preprocessing, modeling, and visualization.
 \end{itemize}
 
-\textbf{GetNextLine Implementation (C)}
-\vspace{-4mm}
-\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Implemented a custom function to read lines from standard input using low-level system calls (`read`) and manual memory management.
-    \item Designed buffer-zeroing and dynamic allocation strategies to handle varying input sizes safely while preventing overflow.
-    \item Handled edge cases (EOF, null bytes, \verb|\n|/\verb|\r| line breaks, empty input) with correct memory cleanup using \verb|malloc|/\verb|free|.
-\end{itemize}
 
-\textbf{Limited printf Implementation (C)}
-\vspace{-4mm}
-\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Built a custom `printf` supporting \%s, \%c, and \%d format specifiers without the C standard library.
-    \item Used only system calls (\verb|read|, \verb|write|) and implemented supporting functions (\verb|my_strlen|, \verb|my_puts|, \verb|my_itoa|) for string handling and integer conversion.
-    \item Managed variadic arguments via stack frame manipulation (\verb|x86args.h|), demonstrating low-level assembly interface and systems programming.    
-\end{itemize}
 
 % Skills Section
 \vspace{-6mm} % Section separation
@@ -139,9 +134,9 @@
 \hrule
 \vspace{0mm}
 \textbf{Languages:} (Proficient): C, Java, LaTeX, HTML/CSS, Javascript, Python, SQL; (Familiar): C++, Clojure, Erlang \\
-\textbf{Frameworks:} React, Node.js, Express.js, Flask  \\
+\textbf{Frameworks:} React, Node.js, Express.js, Flask, psycopg, Arduino, TensorFlow \\
 \textbf{Libraries:} Pandas, NumPy, Matplotlib, Scikit-learn, PyTorch \\
-\textbf{Developer Tools:} Git, Docker, Makefile, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter Notebook \\
+\textbf{Developer Tools:} Git, Docker, Makefile, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter NB, PlatformIO \\
 \textbf{Methodologies:} Agile development, Scrum, Waterfall
 
 \end{document}

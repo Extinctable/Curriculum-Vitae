@@ -11,14 +11,14 @@
 
 \begin{document}
 
-% Commandes pour mes informations de contact
+% Commands for my Contact Information
 \newcommand{\fullname}{Massimo Caruso}
 \newcommand{\phone}{(514) 944-5977}
 \newcommand{\email}{massimo02caruso@gmail.com}
 \newcommand{\linkedin}{linkedin.com/in/massimocaruso}
 \newcommand{\github}{github.com/Extinctable}
 
-% Nom et informations de contact
+% Name and Contact Information
 \begin{center}
     {\Huge \textbf{\fullname}} \\
     \vspace{1mm}
@@ -32,79 +32,107 @@
 
 \vspace{-8mm}
 
-% Section Éducation
-\section*{Éducation}
+% Education Section
+\section*{Formation}
 \vspace{-2mm}
 \hrule
 \vspace{0mm}
 
-\textbf{Montréal, Canada} \hfill \textbf{Université Concordia} \hfill \textbf{Janvier 2023 -- Présent} 
+\textbf{Montréal, Canada} \hfill \textbf{Université Concordia} \hfill \textbf{Jan 2023 -- Présent} 
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt]
-    \item \textbf{Spécialisation:} Génie logiciel, BEng
-    \item \textbf{Cours pertinents:} Structures de données et algorithmes, systèmes d'exploitation, matériel informatique, POO, bases de données, probabilités et statistiques
+    \item \textbf{Spécialisation :} Génie logiciel, BEng
+    \item \textbf{Cours pertinents :} Structures de données et algorithmes, Systèmes d’exploitation, Bases de données, Systèmes embarqués, Apprentissage automatique et Apprentissage profond
 \end{itemize}
 
-% Section Expérience
+% Experience Section
+\vspace{-6mm} % Section separation
 \section*{Expérience}
 \vspace{-2mm}
 \hrule
 \vspace{0mm}
 
-\textbf{Concepteur de défis CTF, } \hfill \textbf{AtHackCTF} \hfill \textbf{Novembre 2024 -- Présent} \\
-{Hackathon {\href{https://www.athackctf.com}{(www.athackctf.com)} : Hackathon basé sur le concept Capture the Flag.}}
-\vspace{-4mm}
+{\href{https://www.payfacto.com}{\textbf{PayFacto - Solutions technologiques de paiement}}} \hfill \textbf{Mai 2025 -- Août 2025} \\
+{Implémentation logicielle, Stagiaire}
+\vspace{-3mm}
 \begin{itemize}[left=0.15in, itemsep=0pt]
-    \item Conception et implémentation de défis RFID Capture the Flag (CTF) simulant des scénarios de sécurité réels, offrant aux participants des expériences éducatives et engageantes.
-    \item Création de défis utilisant des technologies RFID, en exploitant les protocoles, matériels (lecteurs et étiquettes RFID) et outils logiciels pour développer des simulations réalistes d'attaques et de défenses.
-    \item Équilibrage entre difficulté et valeur éducative, garantissant que les participants acquièrent des compétences pratiques en sécurité RFID, y compris l'identification et l'exploitation des vulnérabilités.
+    \item Dirigé l’acquisition, le nettoyage et le prétraitement de jeux de données bruts de marchands pour le déploiement de MEVWeb, une plateforme SaaS basée sur le cloud à l’échelle provinciale mandatée par Revenu Québec.
+    \item Participé au déploiement complet du logiciel MEVWeb à distance et sur site, incluant la planification, les tests et l’installation.
+    \item Supporté les transitions matérielles en désinstallant les appareils MEV existants et en installant des composants compatibles MEVWeb, tels que les imprimantes et les routeurs.
+    \item Collaboré avec les équipes de livraison de projet, services sur le terrain et ventes pour assurer une coordination fluide des déploiements et de l’intégration des marchands.
+    \item Testé les builds et les packages de déploiement MEVWeb, rapporté les bugs et vérifié la stabilité avant le lancement en production.
 \end{itemize}
 
-% Section Projets
+{\href{https://www.athackctf.com}{\textbf{AtHackCTF}}} \hfill \textbf{Nov 2024 -- Mars 2025} \\
+{Concepteur et développeur de défis, Temps partiel permanent}
+\vspace{-3mm}
+
+\begin{itemize}[left=0.15in, itemsep=0pt]
+    \item Conçu un défi Capture the Flag (CTF) complexe basé sur RFID utilisant un vrai distributeur automatique et des cartes MIFARE Classic, qui communiquait avec le lecteur de la machine pour simuler un environnement sécurisé.
+    \item Développé trois flags nécessitant des participants de :
+    
+        \begin{itemize}[left=0.2in, itemsep=0pt]
+            \vspace{-2mm}
+            \item Extraire le code PIN de la carte en rétro-ingénierie des données RFID.
+            \item Manipuler les données de solde de la carte, permettant au participant de modifier les fonds stockés sur la carte.
+            \item Modifier l’UID de la carte pour usurper un administrateur et escalader les privilèges dans le système.
+        \end{itemize}
+        \vspace{-2mm}
+    
+    \item Implémenté une interface ATM interactive, incluant des boutons de navigation et une imprimante pour délivrer les flags après succès des défis.
+    \item Facilitée l’apprentissage de la sécurité matérielle, de la manipulation de mémoire à l’escalade de privilèges, dans un contexte réel.
+    \item Préparé plus de 600 cartes MIFARE Classic en écrivant des données personnalisées sur chaque carte et en assurant un étiquetage et un formatage appropriés pour les participants.
+\end{itemize}
+
+% Projects Section
+\vspace{-6mm} % Section separation
 \section*{Projets}
 \vspace{-2mm}
 \hrule
 \vspace{0mm}
 
-\textbf{Système de base de données alimentaire}
+\textbf{Prédictibilité du marché (Projet Deep Learning)}
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Développement d'une base de données nutritionnelle en ligne intégrant des données structurées de deux APIs (FatSecret et TheMealDB) pour fournir des informations nutritionnelles détaillées, des recettes et des métadonnées diététiques.
-    \item Nettoyage, validation et extraction des données JSON depuis les APIs à l'aide de scripts Python, en traitant les valeurs nulles et les doublons. Les données ont été stockées dans des bases relationnelles (PostgreSQL) et non relationnelles (MongoDB) pour tirer parti d'une gestion hybride.
-    \item Conception d'un modèle ER avec 15 tables interconnectées pour PostgreSQL et des collections pour MongoDB ("recettes", "instructions" et "aliments"). Optimisation des requêtes SQL et NoSQL grâce à des index et des opérations d'agrégation pour améliorer les performances.
-    \item Migration automatisée des données structurées de PostgreSQL vers MongoDB à l'aide de scripts Python, assurant un lien fluide entre les clés primaires et étrangères.
-    \item Résolution des inefficacités dans la récupération des données de l'API FatSecret en implémentant un générateur de noms de recettes aléatoires pour contourner les grands écarts d'ID, améliorant considérablement la vitesse et la précision de l'extraction des données.
+    \item Conçu et implémenté un modèle de trading basé sur LSTM avec PyTorch pour apprendre les allocations de levier quotidiennes sur le dataset Hull Tactical Market Prediction, atteignant un score Sharpe ajusté de \textbf{1,94}, indiquant une performance ajustée au risque élevée.
+    \item Dirigé l’optimisation systématique des hyperparamètres (longueur de séquence, dimensions cachées, taux d’apprentissage, régularisation), identifiant une configuration optimale produisant un rendement cumulatif de \textbf{122,4\%} contre \textbf{116,7\%} pour un benchmark du marché.
+    \item Développé des pipelines d’évaluation et de visualisation pour analyser les courbes d’équité, les drawdowns et les métriques de risque glissantes, observant un Sharpe glissant moyen d’environ \textbf{1,14} avec un drawdown maximum de \textbf{-25,2\%}.
 \end{itemize}
 
-\textbf{Application de retour d'information entre enseignants et étudiants} 
+\textbf{Système d’accès sans fil embarqué}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=1pt, label=--]
+    \item Conçu un système d’accès embarqué à deux nœuds utilisant ESP32 avec BLE et LoRa, implémentant l’actionnement d’une serrure par servo, la détection de sabotage via capteur analogique et une machine à états finis déterministe (armé, alarme, 2FA, désarmé) en C++ avec PlatformIO.
+    \item Implémenté une messagerie d’alerte chiffrée AES-128 au niveau applicatif sur LoRa et un protocole challenge-réponse à deux facteurs BLE pour désarmement local, ainsi qu’une console administrateur authentifiée avec politique de verrouillage et vérification biométrique simulée.
+    \item Intégré plusieurs entrées capteurs (potentiomètre position de porte, détection de mouvement IR, biométrie tactile) avec alertes sans fil chiffrées, suivi en temps réel sur console et architecture firmware modulaire supportant simulation hors ligne et renforcement progressif de la sécurité.
+\end{itemize}
+
+\textbf{Système de base de données alimentaires}
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Conception et implémentation de composants front-end responsifs, y compris une barre latérale interactive, un en-tête et une page d'accueil, garantissant une navigation fluide et une adaptabilité sur tous les appareils.
-    \item Développement et connexion du front-end pour les pages de feedback et de contact aux APIs backend, permettant aux utilisateurs de consulter les retours et de soumettre des messages avec des confirmations en temps réel.
-    \item Conception et hébergement de bases de données relationnelles sur Microsoft Azure, optimisant les requêtes SQL pour une récupération et une manipulation efficaces des données.
-    \item Réalisation de tests d'acceptation, résolution des bogues et vérification de la fonctionnalité des fonctionnalités pour une expérience utilisateur fluide sur divers appareils.
-    \item Gestion du dépôt avec le contrôle de version, révision des pull requests, mise en œuvre de normes de codage et documentation des processus pour assurer la qualité et l'organisation du projet.
+    \item Développé une base de données nutritionnelle en ligne intégrant des API (FatSecret, TheMealDB) pour fournir des données nutritionnelles détaillées, recettes et métadonnées diététiques.
+    \item Nettoyé et validé les données JSON, stockées dans des bases hybrides (PostgreSQL + MongoDB) avec requêtes optimisées, indexation et agrégations.
+    \item Automatisé la migration de données entre SQL et NoSQL, améliorant l’efficacité de récupération avec un générateur de noms de recettes pour l’API FatSecret.
 \end{itemize}
 
-\textbf{Modèle de régression linéaire} 
+\textbf{Modèle de régression linéaire}
 \vspace{-4mm}
 \begin{itemize}[left=0.15in, itemsep=0pt, label=--]
-    \item Développement d'un modèle de régression linéaire multiple pour analyser les facteurs influençant l'espérance de vie à l'aide des données de l'OMS couvrant 193 pays (2000–2015).
-    \item Nettoyage et prétraitement des données en gérant les valeurs manquantes, en supprimant les valeurs aberrantes et en convertissant les variables catégoriques en données quantitatives à l'aide de Python.
-    \item Application de l'élimination arrière pour réduire les prédicteurs de 20 à 6, en traitant la multicolinéarité et en améliorant la précision du modèle (R² ajusté = 0,771).
-    \item Utilisation de Python (Pandas, NumPy, Scikit-learn) pour l'analyse, les tests d'hypothèses et la modélisation ; visualisation des corrélations à l'aide de cartes thermiques et de diagrammes de dispersion.
-    \item Prédiction de l'espérance de vie du Canada en 2013 avec une précision de 0,5 an par rapport à la valeur rapportée par l'OMS, démontrant la fiabilité et l'efficacité du modèle.
+    \item Construit un modèle de régression multiple pour analyser les facteurs d’espérance de vie (dataset OMS, 193 pays, 2000–2015).
+    \item Appliqué l’élimination rétroactive pour réduire les prédicteurs de 20 à 6, atteignant un $R^2$ ajusté de 0,77 et prédisant l’espérance de vie du Canada en 2013 à 0,5 an près de la valeur rapportée.
+    \item Utilisé Python (Pandas, NumPy, Scikit-learn) pour le prétraitement, la modélisation et la visualisation.
 \end{itemize}
 
-% Section Compétences
+% Skills Section
+\vspace{-6mm} % Section separation
 \section*{Compétences}
 \vspace{-2mm}
 \hrule
 \vspace{0mm}
-\textbf{Langages :} (Maîtrisé) : Java, LaTeX, HTML/CSS, Javascript, Python, SQL ; (Connaissances) : C, C++, Clojure, Erlang \\
-\textbf{Frameworks :} React, Node.js, Flask, Express.js  \\
-\textbf{Bibliothèques :} Pandas, NumPy, Matplotlib, Scikit-learn \\
-\textbf{Outils de développement :} Git, Docker, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter Notebook \\
-\textbf{Méthodologies:} Agile development, Scrum, Waterfall
-\end{document}
+\textbf{Langages :} (Compétent) : C, Java, LaTeX, HTML/CSS, Javascript, Python, SQL ; (Connaissance) : C++, Clojure, Erlang \\
+\textbf{Frameworks :} React, Node.js, Express.js, Flask, psycopg, Arduino, TensorFlow \\
+\textbf{Bibliothèques :} Pandas, NumPy, Matplotlib, Scikit-learn, PyTorch \\
+\textbf{Outils de développement :} Git, Docker, Makefile, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter NB, PlatformIO \\
+\textbf{Méthodologies :} Développement Agile, Scrum, Waterfall
 
+\end{document}
