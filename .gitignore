@@ -6,5 +6,4 @@
 *.synctex.gz
 
 # /directory/ ignores all of the files within the specified directory
-/Applications_Summer25/
-/Applications_Fall25/
+/Applications
