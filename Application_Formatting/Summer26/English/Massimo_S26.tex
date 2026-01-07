@@ -1,0 +1,207 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[b4paper]{geometry}
+\geometry{margin=0.5in}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+% Commands for my Contact Information
+\newcommand{\fullname}{Massimo Caruso}
+\newcommand{\phone}{(514) 944-5977}
+\newcommand{\email}{massimo02caruso@gmail.com}
+\newcommand{\linkedin}{linkedin.com/in/massimocaruso}
+\newcommand{\github}{github.com/Extinctable}
+
+% Commands for Recipient Information
+\newcommand*{\hiringManager}{Hiring manager}
+\newcommand*{\company}{COMPANY}
+\newcommand*{\address}{STREETNUMBER STREETNAME, CITY, PROVINCE POSTALCODE}
+
+%Commands for the Body Paragraphs
+\newcommand*{\position}{POSITION}
+\newcommand*{\companyDetails}{COMPANYDETAILS}
+\newcommand*{\positionDetails}{POSITIONDETAILS}
+
+% Name and Contact Information
+\begin{center}
+    {\Huge \textbf{\fullname}} \\
+    \vspace{1mm}
+    {\small 
+    \faPhone \hspace{0mm} \href{tel:+15149445977}{\phone} $\vert$ 
+    \faEnvelope \hspace{0mm} \href{mailto:massimo02caruso@gmail.com}{\email} $\vert$ 
+    \faLinkedin \hspace{0mm} \href{https://linkedin.com/in/massimocaruso}{\linkedin} $\vert$ 
+    \faGithub \hspace{0mm} \href{https://github.com/Extinctable}{\github}
+    }
+\end{center}
+
+% Recipient Information
+\vspace{1.5em}
+\hiringManager \hfill \today \\
+\company \\
+\address 
+
+
+% Opening
+\vspace{1.5em}
+Dear \hiringManager,
+
+I am thrilled to apply for the \position \space role at \company. As a fourth year Software Engineering student at Concordia University, I bring a robust foundation in software development, coupled with hands-on experience from academic and professional projects.
+
+% Body
+
+% PayFacto description
+During my internship at PayFacto, I worked on the deployment and implementation of MEVWeb, a province-wide cloud-based SaaS platform mandated by Revenu Québec. I supported the acquisition, cleaning, and preprocessing of merchant data to ensure accurate system onboarding and compliance. I also participated in end-to-end software deployments, both remotely and on-site, including planning, testing, and installation, and contributed to validating software builds by testing deployment packages and reporting bugs prior to production rollout. This experience strengthened my understanding of real-world SaaS deployment, cross-functional collaboration, and the operational considerations required when delivering compliant, production-ready software.
+
+% Hexploit Alliance / AtHackCTF description
+As a challenge designer with the Hexploit Alliance at \href{https://www.athackctf.com}{AtHackCTF}, I designed a security challenge simulating an access control system using MIFARE Classic cards, focusing on vulnerabilities like weak key management and privilege escalation. Participants reverse-engineered RFID memory sectors and forged admin access, gaining hands-on experience with embedded systems security.
+
+As part of the AtHackCTF 2025 organizing team, I prepared over 600 MIFARE Classic cards by writing custom data, ensuring proper formatting and labeling, and supporting event logistics. I also coordinated the distribution of RFID card readers and facilitated a lockpicking activity, contributing to a hands-on learning environment focused on practical security concepts.
+
+% Academic Projects
+In addition, my academic projects strengthened my applied software and systems engineering skills. I designed and implemented a secure wireless access control system using ESP32 microcontrollers with BLE and LoRa communication, incorporating multi-factor authentication, encrypted alert messaging, tamper detection, and actuator-based lock control. This project emphasized embedded firmware development, state-machine design, and secure communication between distributed nodes. I also developed an online Food Database System, where I worked with APIs and relational databases to manage data ingestion, querying, and user interactions, reinforcing my experience with Python, JavaScript, SQL, and end-to-end application development.
+
+% Why This Company
+What excites me most about \company \space is \companyDetails. I am particularly drawn to the opportunity to \positionDetails.
+
+% Closing
+I am confident that my technical skills, academic achievements, and passion for software engineering make me a strong candidate for the \position \space role. I would welcome the opportunity to discuss how my experiences align with the needs of your team. Please feel free to reach out to me at \href{tel:+15149445977}{\phone} or \href{mailto:\email}{\email}.
+
+\vspace{1.5em}
+Thank you for considering my application. I look forward to the possibility of contributing to \company's success.
+
+% Signoff
+\vspace{2em}
+Sincerely, \\
+\fullname
+
+\newpage
+
+% Name and Contact Information
+\begin{center}
+    {\Huge \textbf{\fullname}} \\
+    \vspace{1mm}
+    {\small 
+    \faPhone \hspace{0mm} \href{tel:+15149445977}{\phone} $\vert$ 
+    \faEnvelope \hspace{0mm} \href{mailto:massimo02caruso@gmail.com}{\email} $\vert$ 
+    \faLinkedin \hspace{0mm} \href{https://linkedin.com/in/massimocaruso}{\linkedin} $\vert$ 
+    \faGithub \hspace{0mm} \href{https://github.com/Extinctable}{\github}
+    }
+\end{center}
+
+\vspace{-8mm}
+
+
+% Education Section
+\section*{Education}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+
+\textbf{Montreal, Canada} \hfill \textbf{Concordia University} \hfill \textbf{Jan 2023 -- Present} 
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt]
+    \item \textbf{Major:} Software Engineering, BEng
+    \item \textbf{Relevant Courses:} Data Structures and Algorithms, Operating Systems, Databases, Embedded Systems, Machine Learning, and Deep Learning
+\end{itemize}
+
+
+% Experience Section
+\vspace{-6mm} % Section separation
+\section*{Experience}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+
+{\href{https://www.payfacto.com}{\textbf{PayFacto - Payment Technology Solutions}}} \hfill \textbf{May 2025 -- August 2025} \\
+{Software Implementation, Intern }
+\vspace{-3mm}
+\begin{itemize}[left=0.15in, itemsep=0pt]
+    \item Spearheaded data acquisition, cleaning, and preprocessing of raw merchant data sets for the deployment of MEVWeb, a province-wide cloud-based SaaS platform mandated by Revenu Québec.
+    \item Participated in end-to-end deployment of MEVWeb software remotely and on-site, including planning, testing, and installation.
+    \item Supported hardware transitions by uninstalling legacy MEV devices and installing MEVWeb-compatible components such as printers and routers.
+    \item Collaborated with project delivery, field services, and sales teams to ensure seamless coordination of deployments and merchant onboarding.
+    \item Tested MEVWeb software builds and deployment packages, reporting bugs and verifying stability before production rollout.
+\end{itemize}
+
+{\href{https://www.athackctf.com}{\textbf{AtHackCTF}}} \hfill \textbf{Nov 2024 -- March 2025} \\
+{Challenge Designer and Developer, Permanent Part-time}
+\vspace{-3mm}
+
+\begin{itemize}[left=0.15in, itemsep=0pt]
+    \item Designed a complex RFID-based Capture the Flag (CTF) challenge using a real ATM machine and MIFARE Classic cards, which communicated with the machine's reader to simulate a security environment.
+    \item Developed three flags requiring participants to:
+    
+        \begin{itemize}[left=0.2in, itemsep=0pt]
+            \vspace{-2mm}
+            \item Extract the card’s PIN from memory by reverse-engineering the RFID data.
+            \item Manipulate the card's balance data, allowing the participant to alter the funds stored on the card.
+            \item Modify the card's UID to impersonate an admin and escalate privileges within the system.
+        \end{itemize}
+        \vspace{-2mm}
+    
+    \item Implemented an interactive ATM interface, including buttons for navigation and a printer to issue flags upon successful completion of challenges.
+    \item Facilitated the learning of hardware security, from memory manipulation to privilege escalation, within a real-world context.
+    \item Prepared over 600 MIFARE Classic cards by writing custom data to each card and ensuring proper labeling and formatting for participant use.
+
+\end{itemize}
+
+
+% Projects Section
+\vspace{-6mm}
+\section*{Projects}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+
+\textbf{Market Predictability (Deep Learning Project)}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Designed and implemented a PyTorch LSTM-based trading model to learn daily market leverage allocations on the Hull Tactical Market Prediction dataset, achieving an adjusted Sharpe score of \textbf{1.94}, indicating strong risk-adjusted performance with nearly twice as much return per unit of risk.
+    \item Led systematic hyperparameter optimization across sequence length, hidden dimensions, learning rate, and regularization, identifying an optimal configuration that produced a cumulative strategy return of \textbf{122.4\%} versus \textbf{116.7\%} for a market benchmark.
+    \item Developed evaluation and visualization pipelines to analyze equity curves, drawdowns, and rolling risk metrics, observing an average rolling Sharpe of approximately \textbf{1.14} with a maximum drawdown of \textbf{-25.2\%}.
+\end{itemize}
+
+\textbf{Embedded Wireless Access Control System}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=1pt, label=--]
+    \item Designed a two-node embedded access control system using ESP32 with BLE and LoRa, implementing servo-based lock actuation, tamper detection via analog sensing, and a deterministic finite state machine (armed, alarm, 2FA, disarmed) in C++ using PlatformIO.
+    \item Implemented application-layer AES-128 encrypted alert messaging over LoRa and a BLE-based two-factor challenge--response protocol for local disarm, alongside an authenticated admin console with lockout policy and simulated biometric verification.
+    \item Integrated multi-sensor inputs (potentiometer door position, IR motion, touch-based biometric) with encrypted wireless alerts, real-time console monitoring, and modular firmware architecture supporting offline simulation and incremental security hardening.
+\end{itemize}
+
+\textbf{Food Database System}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Developed an online nutritional database integrating APIs (FatSecret, TheMealDB) to provide detailed nutritional data, recipes, and dietary metadata.
+    \item Cleaned and validated JSON data, storing in hybrid databases (PostgreSQL + MongoDB) with optimized queries, indexing, and aggregates.
+    \item Automated data migration between SQL and NoSQL, improving retrieval efficiency with custom recipe-name generator for FatSecret API.
+\end{itemize}
+
+\textbf{Linear Regression Model}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Built a multiple regression model to analyze life expectancy factors (WHO dataset, 193 countries, 2000–2015).
+    \item Applied backward elimination to reduce predictors from 20 to 6, achieving adjusted $R^2 = 0.77$ and predicting Canada’s 2013 life expectancy within 0.5 years of reported value.
+    \item Used Python (Pandas, NumPy, Scikit-learn) for preprocessing, modeling, and visualization.
+\end{itemize}
+
+
+% Skills Section
+\vspace{-6mm} % Section separation
+\section*{Skills}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+\textbf{Languages:} (Proficient): C, Java, LaTeX, HTML/CSS, Javascript, Python, SQL; (Familiar): C++, Clojure, Erlang \\
+\textbf{Frameworks:} React, Node.js, Express.js, Flask, psycopg, Arduino, TensorFlow \\
+\textbf{Libraries:} Pandas, NumPy, Matplotlib, Scikit-learn, PyTorch \\
+\textbf{Developer Tools:} Git, Docker, Makefile, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter NB, PlatformIO \\
+\textbf{Methodologies:} Agile development, Scrum, Waterfall
+
+\end{document}

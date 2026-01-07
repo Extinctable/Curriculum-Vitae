@@ -1,0 +1,206 @@
+\documentclass[10pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[b4paper]{geometry}
+\geometry{margin=0.5in}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome}
+\renewcommand{\familydefault}{\sfdefault}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt}
+
+\begin{document}
+
+% Commands for my Contact Information
+\newcommand{\fullname}{Massimo Caruso}
+\newcommand{\phone}{(514) 944-5977}
+\newcommand{\email}{massimo02caruso@gmail.com}
+\newcommand{\linkedin}{linkedin.com/in/massimocaruso}
+\newcommand{\github}{github.com/Extinctable}
+
+% Commands for Recipient Information
+\newcommand*{\hiringManager}{Responsable du recrutement}
+\newcommand*{\company}{COMPANY}
+\newcommand*{\address}{NUMERODERUE NOMDERUE, VILLE, PROVINCE CODEPOSTAL}
+
+%Commands for the Body Paragraphs
+\newcommand*{\position}{POSTE}
+\newcommand*{\companyDetails}{DETAILSENTREPRISE}
+\newcommand*{\positionDetails}{DETAILSPOSTE}
+
+% Name and Contact Information
+\begin{center}
+    {\Huge \textbf{\fullname}} \\
+    \vspace{1mm}
+    {\small 
+    \faPhone \hspace{0mm} \href{tel:+15149445977}{\phone} $\vert$ 
+    \faEnvelope \hspace{0mm} \href{mailto:massimo02caruso@gmail.com}{\email} $\vert$ 
+    \faLinkedin \hspace{0mm} \href{https://linkedin.com/in/massimocaruso}{\linkedin} $\vert$ 
+    \faGithub \hspace{0mm} \href{https://github.com/Extinctable}{\github}
+    }
+\end{center}
+
+% Recipient Information
+\vspace{1.5em}
+\hiringManager \hfill \today \\
+\company \\
+\address 
+
+
+% Opening
+\vspace{1.5em}
+Cher \hiringManager,
+
+Je suis ravi de poser ma candidature au poste de \position \space chez \company. Étudiant en quatrième année de génie logiciel à l’Université Concordia, je possède une solide base en développement logiciel, combinée à une expérience pratique acquise à travers des projets académiques et professionnels.
+
+% Body
+
+% PayFacto description
+Lors de mon stage chez PayFacto, j’ai travaillé au déploiement et à l’implémentation de MEVWeb, une plateforme SaaS infonuagique à l’échelle provinciale mandatée par Revenu Québec. J’ai contribué à l’acquisition, au nettoyage et au prétraitement des données marchandes afin d’assurer une intégration système précise et conforme. J’ai également participé à des déploiements logiciels de bout en bout, à distance et sur site, incluant la planification, les tests et l’installation, et j’ai contribué à la validation des versions logicielles en testant les paquets de déploiement et en signalant les bogues avant la mise en production. Cette expérience a renforcé ma compréhension des déploiements SaaS en conditions réelles, de la collaboration interfonctionnelle et des considérations opérationnelles nécessaires à la livraison de logiciels conformes et prêts pour la production.
+
+% Hexploit Alliance / AtHackCTF description
+En tant que concepteur de défis au sein de la Hexploit Alliance lors de \href{https://www.athackctf.com}{AtHackCTF}, j’ai conçu un défi de sécurité simulant un système de contrôle d’accès utilisant des cartes MIFARE Classic, mettant l’accent sur des vulnérabilités telles que la mauvaise gestion des clés et l’escalade de privilèges. Les participants ont rétroconçu des secteurs de mémoire RFID et falsifié des accès administrateur, acquérant ainsi une expérience pratique en sécurité des systèmes embarqués.
+
+En tant que membre de l’équipe d’organisation d’AtHackCTF 2025, j’ai préparé plus de 600 cartes MIFARE Classic en y écrivant des données personnalisées, en assurant leur formatage et leur étiquetage, et en soutenant la logistique de l’événement. J’ai également coordonné la distribution des lecteurs RFID et animé une activité de crochetage de serrures, contribuant à un environnement d’apprentissage pratique axé sur des concepts de sécurité concrets.
+
+% Academic Projects
+De plus, mes projets académiques ont renforcé mes compétences appliquées en génie logiciel et en ingénierie des systèmes. J’ai conçu et implémenté un système de contrôle d’accès sans fil sécurisé utilisant des microcontrôleurs ESP32 avec communication BLE et LoRa, intégrant une authentification multifacteur, des alertes chiffrées, la détection de sabotage et un contrôle d’accès par actionneur. Ce projet mettait l’accent sur le développement de micrologiciels embarqués, la conception de machines à états et la communication sécurisée entre nœuds distribués. J’ai également développé un système de base de données alimentaire en ligne, dans lequel j’ai travaillé avec des API et des bases de données relationnelles pour gérer l’ingestion, l’interrogation et l’interaction des données, renforçant ainsi mon expérience en Python, JavaScript, SQL et en développement applicatif de bout en bout.
+
+% Why This Company
+Ce qui m’enthousiasme le plus chez \company \space est \companyDetails. Je suis particulièrement attiré par l’opportunité de \positionDetails.
+
+% Closing
+Je suis convaincu que mes compétences techniques, mes réalisations académiques et ma passion pour le génie logiciel font de moi un excellent candidat pour le poste de \position \space. Je serais ravi de discuter de la manière dont mes expériences correspondent aux besoins de votre équipe. N’hésitez pas à me contacter au \href{tel:+15149445977}{\phone} ou par courriel à \href{mailto:\email}{\email}.
+
+\vspace{1.5em}
+Je vous remercie de l’attention portée à ma candidature et me réjouis à l’idée de pouvoir contribuer au succès de \company.
+
+% Signoff
+\vspace{2em}
+Cordialement, \\
+\fullname
+
+\newpage
+
+% Name and Contact Information
+\begin{center}
+    {\Huge \textbf{\fullname}} \\
+    \vspace{1mm}
+    {\small 
+    \faPhone \hspace{0mm} \href{tel:+15149445977}{\phone} $\vert$ 
+    \faEnvelope \hspace{0mm} \href{mailto:massimo02caruso@gmail.com}{\email} $\vert$ 
+    \faLinkedin \hspace{0mm} \href{https://linkedin.com/in/massimocaruso}{\linkedin} $\vert$ 
+    \faGithub \hspace{0mm} \href{https://github.com/Extinctable}{\github}
+    }
+\end{center}
+
+\vspace{-8mm}
+
+
+% Education Section
+\section*{Formation}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+
+\textbf{Montréal, Canada} \hfill \textbf{Université Concordia} \hfill \textbf{Jan 2023 -- Présent} 
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt]
+    \item \textbf{Programme :} Génie logiciel, B. Ing.
+    \item \textbf{Cours pertinents :} Structures de données et algorithmes, Systèmes d’exploitation, Bases de données, Systèmes embarqués, Apprentissage automatique et apprentissage profond
+\end{itemize}
+
+
+% Experience Section
+\vspace{-6mm}
+\section*{Expérience}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+
+{\href{https://www.payfacto.com}{\textbf{PayFacto - Solutions de technologies de paiement}}} \hfill \textbf{Mai 2025 -- Août 2025} \\
+{Stagiaire en implémentation logicielle}
+\vspace{-3mm}
+\begin{itemize}[left=0.15in, itemsep=0pt]
+    \item Piloté l’acquisition, le nettoyage et le prétraitement de jeux de données marchandes brutes pour le déploiement de MEVWeb, une plateforme SaaS infonuagique à l’échelle provinciale mandatée par Revenu Québec.
+    \item Participé au déploiement de bout en bout du logiciel MEVWeb, à distance et sur site, incluant la planification, les tests et l’installation.
+    \item Soutenu les transitions matérielles en désinstallant les anciens dispositifs MEV et en installant des composants compatibles MEVWeb tels que des imprimantes et des routeurs.
+    \item Collaboré avec les équipes de livraison de projets, de services terrain et de ventes afin d’assurer une coordination fluide des déploiements et de l’intégration des marchands.
+    \item Testé les versions logicielles et les paquets de déploiement de MEVWeb, signalé les bogues et vérifié la stabilité avant la mise en production.
+\end{itemize}
+
+{\href{https://www.athackctf.com}{\textbf{AtHackCTF}}} \hfill \textbf{Nov 2024 -- Mars 2025} \\
+{Concepteur et développeur de défis, temps partiel permanent}
+\vspace{-3mm}
+
+\begin{itemize}[left=0.15in, itemsep=0pt]
+    \item Conçu un défi Capture The Flag (CTF) complexe basé sur la technologie RFID utilisant un véritable guichet automatique et des cartes MIFARE Classic, communiquant avec le lecteur de la machine pour simuler un environnement sécurisé.
+    \item Développé trois drapeaux exigeant des participants de :
+    
+        \begin{itemize}[left=0.2in, itemsep=0pt]
+            \vspace{-2mm}
+            \item Extraire le NIP de la carte à partir de la mémoire en rétroconcevant les données RFID.
+            \item Manipuler les données de solde de la carte, permettant de modifier les fonds stockés.
+            \item Modifier l’UID de la carte afin d’usurper l’identité d’un administrateur et d’élever les privilèges dans le système.
+        \end{itemize}
+        \vspace{-2mm}
+    
+    \item Implémenté une interface interactive de guichet automatique, incluant des boutons de navigation et une imprimante pour émettre les drapeaux après la réussite des défis.
+    \item Facilité l’apprentissage de la sécurité matérielle, de la manipulation mémoire à l’escalade de privilèges, dans un contexte réel.
+    \item Préparé plus de 600 cartes MIFARE Classic en y écrivant des données personnalisées et en assurant un étiquetage et un formatage appropriés pour les participants.
+\end{itemize}
+
+
+% Projects Section
+\vspace{-6mm}
+\section*{Projets}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+
+\textbf{Prédictibilité des marchés (Projet en apprentissage profond)}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Conçu et implémenté un modèle de trading basé sur des réseaux LSTM en PyTorch afin d’apprendre des allocations quotidiennes de levier de marché sur le jeu de données Hull Tactical Market Prediction, atteignant un ratio de Sharpe ajusté de \textbf{1.94}, indiquant une forte performance ajustée au risque.
+    \item Dirigé une optimisation systématique des hyperparamètres (longueur de séquence, dimensions cachées, taux d’apprentissage et régularisation), identifiant une configuration optimale produisant un rendement cumulatif de \textbf{122.4\%} contre \textbf{116.7\%} pour l’indice de référence.
+    \item Développé des pipelines d’évaluation et de visualisation pour analyser les courbes de capital, les pertes maximales et les métriques de risque glissantes, observant un ratio de Sharpe glissant moyen d’environ \textbf{1.14} avec une perte maximale de \textbf{-25.2\%}.
+\end{itemize}
+
+\textbf{Système de contrôle d’accès sans fil embarqué}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=1pt, label=--]
+    \item Conçu un système de contrôle d’accès embarqué à deux nœuds utilisant des ESP32 avec BLE et LoRa, implémentant une action de verrouillage par servomoteur, la détection de sabotage par capteur analogique et une machine à états finie déterministe (armé, alarme, 2FA, désarmé) en C++ avec PlatformIO.
+    \item Implémenté des alertes chiffrées AES-128 au niveau applicatif sur LoRa et un protocole d’authentification à deux facteurs par défi--réponse via BLE pour le désarmement local, ainsi qu’une console administrateur authentifiée avec politique de verrouillage et vérification biométrique simulée.
+    \item Intégré plusieurs capteurs (position de porte par potentiomètre, mouvement infrarouge, biométrie tactile) avec des alertes sans fil chiffrées, une surveillance en temps réel via console et une architecture de micrologiciel modulaire supportant la simulation hors ligne et le durcissement progressif de la sécurité.
+\end{itemize}
+
+\textbf{Système de base de données alimentaire}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Développé une base de données nutritionnelle en ligne intégrant des API (FatSecret, TheMealDB) afin de fournir des données nutritionnelles détaillées, des recettes et des métadonnées alimentaires.
+    \item Nettoyé et validé des données JSON, stockées dans des bases hybrides (PostgreSQL + MongoDB) avec des requêtes optimisées, de l’indexation et des agrégations.
+    \item Automatisé la migration des données entre SQL et NoSQL, améliorant l’efficacité de récupération grâce à un générateur personnalisé de noms de recettes pour l’API FatSecret.
+\end{itemize}
+
+\textbf{Modèle de régression linéaire}
+\vspace{-4mm}
+\begin{itemize}[left=0.15in, itemsep=0pt, label=--]
+    \item Construit un modèle de régression multiple pour analyser les facteurs influençant l’espérance de vie (jeu de données de l’OMS, 193 pays, 2000–2015).
+    \item Appliqué une élimination rétrograde pour réduire le nombre de prédicteurs de 20 à 6, atteignant un $R^2$ ajusté de 0.77 et prédisant l’espérance de vie du Canada en 2013 avec une précision de 0.5 an.
+    \item Utilisé Python (Pandas, NumPy, Scikit-learn) pour le prétraitement, la modélisation et la visualisation.
+\end{itemize}
+
+
+% Skills Section
+\vspace{-6mm}
+\section*{Compétences}
+\vspace{-2mm}
+\hrule
+\vspace{0mm}
+\textbf{Langages :} (Avancé) : C, Java, LaTeX, HTML/CSS, JavaScript, Python, SQL ; (Intermédiaire) : C++, Clojure, Erlang \\
+\textbf{Frameworks :} React, Node.js, Express.js, Flask, psycopg, Arduino, TensorFlow \\
+\textbf{Bibliothèques :} Pandas, NumPy, Matplotlib, Scikit-learn, PyTorch \\
+\textbf{Outils développeur :} Git, Docker, Makefile, MongoDB, PostgreSQL, Neo4j, VS Code, Eclipse, Jupyter NB, PlatformIO \\
+\textbf{Méthodologies :} Développement Agile, Scrum, Cascade
+
+\end{document}
