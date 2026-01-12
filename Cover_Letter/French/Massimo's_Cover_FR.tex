@@ -11,24 +11,24 @@
 
 \begin{document}
 
-% Commandes pour mes informations de contact
+% Commands for my Contact Information
 \newcommand{\fullname}{Massimo Caruso}
 \newcommand{\phone}{(514) 944-5977}
 \newcommand{\email}{massimo02caruso@gmail.com}
 \newcommand{\linkedin}{linkedin.com/in/massimocaruso}
 \newcommand{\github}{github.com/Extinctable}
 
-% Commandes pour les informations du destinataire
-\newcommand*{\hiringManager}{\textbf{hiringManager}}
-\newcommand*{\company}{\textbf{company}}
-\newcommand*{\address}{\textbf{address}}
+% Commands for Recipient Information
+\newcommand*{\hiringManager}{Responsable du recrutement}
+\newcommand*{\company}{COMPANY}
+\newcommand*{\address}{NUMERODERUE NOMDERUE, VILLE, PROVINCE CODEPOSTAL}
 
-% Commandes pour les paragraphes du corps
-\newcommand*{\position}{\textbf{position}}
-\newcommand*{\companyDetails}{\textbf{companyDetails}}
-\newcommand*{\positionDetails}{\textbf{positionDetails}}
+%Commands for the Body Paragraphs
+\newcommand*{\position}{POSTE}
+\newcommand*{\companyDetails}{DETAILSENTREPRISE}
+\newcommand*{\positionDetails}{DETAILSPOSTE}
 
-% Nom et informations de contact
+% Name and Contact Information
 \begin{center}
     {\Huge \textbf{\fullname}} \\
     \vspace{1mm}
@@ -40,33 +40,42 @@
     }
 \end{center}
 
-% Informations du destinataire
+% Recipient Information
 \vspace{1.5em}
 \hiringManager \hfill \today \\
 \company \\
-\address
+\address 
 
-% Ouverture
+
+% Opening
 \vspace{1.5em}
-Chère \hiringManager,
+Cher \hiringManager,
 
-Je suis ravi de postuler au poste de \position \space chez \company. En tant qu'étudiant en troisième année de génie logiciel à l'Université Concordia, je possède une solide base en développement logiciel, ainsi qu'une expérience pratique acquise au cours de projets académiques et professionnels.
+Je suis ravi de poser ma candidature au poste de \position \space chez \company. Étudiant en quatrième année de génie logiciel à l’Université Concordia, je possède une solide base en développement logiciel, combinée à une expérience pratique acquise à travers des projets académiques et professionnels.
 
-% Corps
-Pendant mon mandat en tant que concepteur de défis CTF chez \href{https://www.athackctf.com}{AtHackCTF}, j'ai développé des défis RFID Capture the Flag pour simuler des scénarios de sécurité réels. Cette expérience a renforcé mes compétences techniques en analyse de systèmes, en intégration matériel/logiciel, et en conception d'environnements interactifs pour la résolution de problèmes, des compétences qui correspondent directement aux exigences du rôle de \position.
+% Body
 
-De plus, mes projets académiques, tels que la création d'un système de base de données alimentaire en ligne et une application de retour d'information entre enseignants et étudiants, m'ont permis d'affiner mon expertise en Python, JavaScript et SQL, tout en travaillant avec des API et des bases de données relationnelles. Ces projets m'ont appris à gérer le développement logiciel de bout en bout, optimiser les performances du système et me concentrer sur la conception centrée sur l'utilisateur.
+% PayFacto description
+Lors de mon stage chez PayFacto, j’ai travaillé au déploiement et à l’implémentation de MEVWeb, une plateforme SaaS infonuagique à l’échelle provinciale mandatée par Revenu Québec. J’ai contribué à l’acquisition, au nettoyage et au prétraitement des données marchandes afin d’assurer une intégration système précise et conforme. J’ai également participé à des déploiements logiciels de bout en bout, à distance et sur site, incluant la planification, les tests et l’installation, et j’ai contribué à la validation des versions logicielles en testant les paquets de déploiement et en signalant les bogues avant la mise en production. Cette expérience a renforcé ma compréhension des déploiements SaaS en conditions réelles, de la collaboration interfonctionnelle et des considérations opérationnelles nécessaires à la livraison de logiciels conformes et prêts pour la production.
 
-% Pourquoi cette entreprise
-Ce qui m'enthousiasme le plus chez \company, c'est \companyDetails. Je suis particulièrement attiré par l'opportunité de \positionDetails.
+% Hexploit Alliance / AtHackCTF description
+En tant que concepteur de défis au sein de la Hexploit Alliance lors de \href{https://www.athackctf.com}{AtHackCTF}, j’ai conçu un défi de sécurité simulant un système de contrôle d’accès utilisant des cartes MIFARE Classic, mettant l’accent sur des vulnérabilités telles que la mauvaise gestion des clés et l’escalade de privilèges. Les participants ont rétroconçu des secteurs de mémoire RFID et falsifié des accès administrateur, acquérant ainsi une expérience pratique en sécurité des systèmes embarqués.
 
-% Conclusion
-Je suis convaincu que mes compétences techniques, mes réalisations académiques et ma passion pour le génie logiciel font de moi un candidat solide pour le poste de \position. Je serais ravi de discuter de la manière dont mes expériences répondent aux besoins de votre équipe. N'hésitez pas à me contacter au \href{tel:+15149445977}{\phone} ou à \href{mailto:\email}{\email}.
+En tant que membre de l’équipe d’organisation d’AtHackCTF 2025, j’ai préparé plus de 600 cartes MIFARE Classic en y écrivant des données personnalisées, en assurant leur formatage et leur étiquetage, et en soutenant la logistique de l’événement. J’ai également coordonné la distribution des lecteurs RFID et animé une activité de crochetage de serrures, contribuant à un environnement d’apprentissage pratique axé sur des concepts de sécurité concrets.
+
+% Academic Projects
+De plus, mes projets académiques ont renforcé mes compétences appliquées en génie logiciel et en ingénierie des systèmes. J’ai conçu et implémenté un système de contrôle d’accès sans fil sécurisé utilisant des microcontrôleurs ESP32 avec communication BLE et LoRa, intégrant une authentification multifacteur, des alertes chiffrées, la détection de sabotage et un contrôle d’accès par actionneur. Ce projet mettait l’accent sur le développement de micrologiciels embarqués, la conception de machines à états et la communication sécurisée entre nœuds distribués. J’ai également développé un système de base de données alimentaire en ligne, dans lequel j’ai travaillé avec des API et des bases de données relationnelles pour gérer l’ingestion, l’interrogation et l’interaction des données, renforçant ainsi mon expérience en Python, JavaScript, SQL et en développement applicatif de bout en bout.
+
+% Why This Company
+Ce qui m’enthousiasme le plus chez \company \space est \companyDetails. Je suis particulièrement attiré par l’opportunité de \positionDetails.
+
+% Closing
+Je suis convaincu que mes compétences techniques, mes réalisations académiques et ma passion pour le génie logiciel font de moi un excellent candidat pour le poste de \position \space. Je serais ravi de discuter de la manière dont mes expériences correspondent aux besoins de votre équipe. N’hésitez pas à me contacter au \href{tel:+15149445977}{\phone} ou par courriel à \href{mailto:\email}{\email}.
 
 \vspace{1.5em}
-Je vous remercie de considérer ma candidature. J'espère avoir l'opportunité de contribuer au succès de \company.
+Je vous remercie de l’attention portée à ma candidature et me réjouis à l’idée de pouvoir contribuer au succès de \company.
 
-% Signature
+% Signoff
 \vspace{2em}
 Cordialement, \\
 \fullname
