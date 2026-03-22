@@ -1,5 +1,7 @@
-# *.filetype ignores all of the specified filetype
+# Cache files
+.DS_Store
 
+# *.filetype ignores all of the specified filetype
 *.aux
 *.log
 *.out
